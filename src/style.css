@@ -1,11 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* General Styles */
 main {
   @apply w-full h-[100vh] flex items-center justify-center text-white;
 }
 
+/* Overarching Styles */
+
+.btn,
+.btn-clear,
+.btn-operator,
+.btn-top {
+  @apply hover:ease-in-out duration-200;
+}
 .calculator {
   @apply bg-darkBg w-80 h-auto overflow-hidden rounded-xl;
 }
