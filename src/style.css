@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+main {
+  @apply w-full h-[100vh] flex items-center justify-center;
+}
+
+.calculator {
+  @apply bg-darkBg w-80 h-auto overflow-hidden rounded-xl;
+}
+
+.display {
+  @apply bg-lightGray w-auto h-20 py-2 m-6 rounded-md;
+}
+
 .calculator-button-container {
+  @apply grid grid-cols-4 gap-2 m-6 pt-2 text-white;
+}
+
+.btn {
+  @apply p-4 aspect-square rounded-full bg-darkGray;
+}
+
+.btn-clear {
+  @apply bg-clearOrange;
+}
+
+.btn-top {
+  @apply bg-lightGray;
+}
+
+.btn-operator {
   @apply bg-pastelGreen;
+}
+
+.zero {
+  @apply col-span-2 aspect-auto;
 }
