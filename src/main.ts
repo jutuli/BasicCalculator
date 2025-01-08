@@ -27,5 +27,22 @@ function handleBtnInput(value: string) {
   }
 }
 
-// ==== Arithmetic Operations ====
-// Addition
+// Split currentOperation in numbers and operators
+function splitCurrentOperation(operation: string) {
+  const numbers: number[] = [];
+  const operators: string[] = [];
+  for (let i = 0; i < operation.length; i++) {
+    let character = operation[i];
+    if (
+      character.includes("+") ||
+      character.includes("-") ||
+      character.includes("/") ||
+      character.includes("*") ||
+      character.includes("%")
+    ) {
+      operators.push(character);
+    } else {
+      numbers.push(parseFloat(character));
+    }
+  }
+}
