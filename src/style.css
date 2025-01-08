@@ -14,6 +14,8 @@ main {
 .btn-top {
   @apply hover:ease-in-out duration-200;
 }
+
+/* Single Styles */
 .calculator {
   @apply bg-darkBg w-80 h-auto overflow-hidden rounded-xl;
 }
