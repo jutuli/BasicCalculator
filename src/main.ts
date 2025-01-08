@@ -46,3 +46,27 @@ function splitCurrentOperation(operation: string) {
     }
   }
 }
+
+// Calculate Two Numbers with Priorities of * and /
+function calculateTwoNumbers(numA: number, numB: number, operator: string) {
+  switch (operator) {
+    case "+":
+      return numA + numB;
+      break;
+    case "-":
+      return numA - numB;
+      break;
+    case "*":
+      return numA * numB;
+      break;
+    case "/":
+      if (numB === 0) {
+        throw new Error("No division by 0.");
+      }
+      return numA / numB;
+      break;
+    case "%":
+      return numA % numB;
+      break;
+  }
+}
