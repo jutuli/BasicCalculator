@@ -44,6 +44,7 @@ function splitCurrentOperation(operation: string) {
     } else {
       numbers.push(parseFloat(character));
     }
+    return { numbers, operators };
   }
 }
 
