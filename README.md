@@ -1,6 +1,6 @@
 # Project - Calculator 🧮
 
-<img src="./src/assets/img/screenshot-calculator.png" alt="Screenshot of the Calculator" height="300">
+<img src="./src/assets/img/screenshot-calculator.png"  alt="Screenshot of the Calculator" height="300">
 
 This Calculator is a web app for basic math operations like addition, subtraction, multiplication, division as well as modulo. It has a clean and functional interface.
 
