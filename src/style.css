@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 main {
-  @apply w-full h-[100vh] flex items-center justify-center;
+  @apply w-full h-[100vh] flex items-center justify-center text-white;
 }
 
 .calculator {
@@ -11,11 +11,19 @@ main {
 }
 
 .display {
-  @apply bg-lightGray w-auto h-20 py-2 m-6 rounded-md;
+  @apply bg-lightGray w-auto h-20 p-2 m-6 rounded-md text-right flex flex-col justify-between;
+}
+
+.operation-input {
+  @apply text-slate-400;
+}
+
+.result {
+  @apply text-3xl;
 }
 
 .calculator-button-container {
-  @apply grid grid-cols-4 gap-2 m-6 pt-2 text-white;
+  @apply grid grid-cols-4 gap-2 m-6 pt-2;
 }
 
 .btn {
