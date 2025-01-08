@@ -31,6 +31,7 @@ function handleBtnInput(value: string) {
 function splitCurrentOperation(operation: string) {
   const numbers: number[] = [];
   const operators: string[] = [];
+  let currentNumber: string = "";
   for (let i = 0; i < operation.length; i++) {
     let character = operation[i];
     if (
@@ -41,11 +42,17 @@ function splitCurrentOperation(operation: string) {
       character.includes("%")
     ) {
       operators.push(character);
+      numbers.push(parseFloat(currentNumber));
+      currentNumber = "";
     } else {
-      numbers.push(parseFloat(character));
+      currentNumber += character;
     }
-    return { numbers, operators };
   }
+  // If after for-loop there is still a currentNumber left, push it to the numbers-array
+  if (currentNumber) {
+    numbers.push(parseFloat(currentNumber));
+  }
+  return { numbers, operators };
 }
 
 // Calculate Two Numbers with Priorities of * and /
