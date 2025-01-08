@@ -6,10 +6,10 @@ export default {
     extend: {
       colors: {
         darkBg: "#1E2021",
-        lightGray: "#4F5E55",
-        darkGray: "#272B3F",
-        clearOrange: "#CF6E21",
-        pastelGreen: "#65B70D",
+        lightGray: "#4D514F",
+        darkGray: "#323339",
+        clearOrange: "#CC6613",
+        pastelGreen: "#A0BA85",
       },
     },
   },

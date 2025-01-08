@@ -27,7 +27,7 @@ main {
 }
 
 .btn {
-  @apply p-4 aspect-square rounded-full bg-darkGray;
+  @apply p-4 aspect-square rounded-full bg-darkGray hover:bg-slate-700;
 }
 
 .btn-clear {
@@ -39,7 +39,7 @@ main {
 }
 
 .btn-operator {
-  @apply bg-pastelGreen;
+  @apply bg-pastelGreen hover:bg-sky-400;
 }
 
 .zero {
